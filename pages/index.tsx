@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
-import IntroTemplate from '../src/components/_templates/Intro';
 
-const IntroPage: NextPage = () => <IntroTemplate title="Rick and Morty FE Tech Test" />;
+const HomePage: NextPage = () => <div>Homepage!</div>;
 
-export default IntroPage;
+export default HomePage;
