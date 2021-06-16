@@ -1,3 +1,10 @@
+const { pathsToModuleNameMapper } = require('ts-jest/utils');
+const { compilerOptions } = require('../tsconfig.json');
+
+const moduleNameMapper = {
+  ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
+};
+
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
@@ -7,6 +14,7 @@ module.exports = {
   transformIgnorePatterns: ['./.next/', './node_modules/'],
   modulePaths: ['<rootDir>'],
   rootDir: '../',
+  moduleNameMapper,
   testURL: 'http://lick-rick-and-morty.com',
   globals: {
     'ts-jest': {
