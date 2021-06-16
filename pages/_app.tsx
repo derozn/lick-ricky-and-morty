@@ -1,9 +1,7 @@
 import '../styles/globals.css';
 import { AppProps } from 'next/app';
 
-const CustomApp = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />;
-};
+const CustomApp = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />;
 
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
