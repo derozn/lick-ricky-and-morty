@@ -21,8 +21,9 @@ module.exports = {
       node: {
         extensions: ['.js', '.ts', '.jsx', '.tsx'],
       },
+      typescript: {},
     },
-    'import/extensions': ['.js', '.ts', '.mjs', '.jsx', '.tsx'],
+    'import/extensions': ['.js', '.ts', '.jsx', '.tsx'],
   },
   extends: ['eslint-config-airbnb', 'eslint-config-airbnb/hooks', 'eslint-config-prettier'],
   plugins: ['@typescript-eslint', 'jest', 'import', 'prettier', 'jsx-a11y', 'react', 'react-hooks'],
