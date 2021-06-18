@@ -34,4 +34,9 @@ declare namespace LickApi {
     noOfCharacters: number;
     episode: string;
   }
+
+  interface ICharacterCoreResponse {
+    status: string;
+    data: ICharacterCore[];
+  }
 }
