@@ -1,8 +1,13 @@
 import { NextPage, InferGetServerSidePropsType, GetServerSideProps } from 'next';
+import { Meta } from '@/components/_shared/Meta';
 import { requestWithAbsoluteUrl } from '@/lib/absoluteRequest';
+import { Home } from '@/components/_templates/Home';
 
 const HomePage: NextPage = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) => (
-  <div>{JSON.stringify(data)}</div>
+  <>
+    <Meta title="Welcome to Lick Rick and Morty!" />
+    <Home data={data} />
+  </>
 );
 
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {

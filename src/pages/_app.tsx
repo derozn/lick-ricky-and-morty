@@ -1,10 +1,13 @@
 import { AppProps } from 'next/app';
 import { GlobalStyle } from '@/styles/GlobalStyle';
+import { DefaultLayout } from '@/components/_layouts/DefaultLayout';
 
 const CustomApp = ({ Component, pageProps }: AppProps) => (
   <>
     <GlobalStyle />
-    <Component {...pageProps} />
+    <DefaultLayout>
+      <Component {...pageProps} />
+    </DefaultLayout>
   </>
 );
 

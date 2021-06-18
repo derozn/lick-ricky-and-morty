@@ -5,10 +5,8 @@ interface IMetaProps {
   title: string;
 }
 
-const Meta: React.FunctionComponent<IMetaProps> = ({ title }) => (
+export const Meta: React.FunctionComponent<IMetaProps> = ({ title }) => (
   <Head>
     <title>{title}</title>
   </Head>
 );
-
-export default Meta;
