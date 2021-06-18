@@ -20,7 +20,13 @@
     "jsx": "preserve",
     "rootDirs": ["src"],
     "paths": {
-      "@/*": ["src/*"]
+      "@/server/*": ["server/*"],
+      "@/components/*": ["src/components/*"],
+      "@/config/*": ["src/config/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/types/*": ["src/types/*"],
+      "@/test/*": ["test/*"]
     }
   },
   "include": [
