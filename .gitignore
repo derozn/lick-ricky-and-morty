@@ -26,10 +26,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env.local
+# .env.local # For the purpose of this tech test, we are allowing the env to be pushed to github. Normally this SHOULD NOT BE THE CASE!
 .env.development.local
 .env.test.local
 .env.production.local
 
 # vercel
 .vercel
+
+# eslint
+.eslintcache

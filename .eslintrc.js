@@ -50,5 +50,6 @@ module.exports = {
       },
     ],
     'no-undef': 'off', // @typescript-eslint does a better job.
+    'import/prefer-default-export': 'off', // Opinionated but I prefer named exports.
   },
 };
