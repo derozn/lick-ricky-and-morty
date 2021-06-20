@@ -1,0 +1,1 @@
+export { HeroAndContent } from './HeroAndContent';
