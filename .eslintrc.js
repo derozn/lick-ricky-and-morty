@@ -52,5 +52,10 @@ module.exports = {
     ],
     'no-undef': 'off', // @typescript-eslint does a better job.
     'import/prefer-default-export': 'off', // Opinionated but I prefer named exports.
+    'import/no-extraneous-dependencies': [
+      // Stop eslint complaining that RTL should be listed as a dependency
+      'error',
+      { devDependencies: ['**/*.spec.ts', '**/*.spec.tsx'] },
+    ],
   },
 };
