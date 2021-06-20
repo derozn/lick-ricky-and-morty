@@ -2,6 +2,7 @@ const { pathsToModuleNameMapper } = require('ts-jest/utils');
 const { compilerOptions } = require('../tsconfig.json');
 
 const moduleNameMapper = {
+  '\\.svg$': '<rootDir>/test/stubs/svgrStub.js',
   ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
 };
 
