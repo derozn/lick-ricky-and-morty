@@ -28,7 +28,8 @@
       "@/styles/*": ["src/styles/*"],
       "@/types/*": ["src/types/*"],
       "@/lib/*": ["src/lib/*"],
-      "@/test/*": ["test/*"]
+      "@/test/*": ["test/*"],
+      "@/assets/*": ["src/assets/*"]
     }
   },
   "include": [

@@ -55,7 +55,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       // Stop eslint complaining that RTL should be listed as a dependency
       'error',
-      { devDependencies: ['**/*.spec.ts', '**/*.spec.tsx'] },
+      { devDependencies: ['**/*.spec.ts', '**/*.spec.tsx', '**/jest.config.js'] },
     ],
   },
 };

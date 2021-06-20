@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 
 export const typography = css`
   h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   h2 {
@@ -17,7 +17,7 @@ export const typography = css`
 
   @media (min-width: 600px) {
     h1 {
-      font-size: 4rem;
+      font-size: 8rem;
     }
 
     h2 {
