@@ -23,6 +23,12 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
   }
 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   ${fonts}
   ${typography}
 `;
