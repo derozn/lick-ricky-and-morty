@@ -7,7 +7,12 @@ export const HeroSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 40vh;
+  background: var(--cultured);
+
+  @media (min-width: 600px) {
+    min-height: 65vh;
+  }
 `;
 
 export const Title = styled.h1`
