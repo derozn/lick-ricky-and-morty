@@ -21,6 +21,7 @@ export const Title = styled.h1`
   font-weight: 400;
   color: var(--pacificBlue);
   text-shadow: 2px 0px 2px var(--lightGreen);
+  margin: 0 0 4rem 0;
 `;
 
 export const ImageWrapper = styled.div`
@@ -34,5 +35,9 @@ export const ImageWrapper = styled.div`
 export const SilhouetteImage = styled(Silhouette)`
   display: inline-block;
   overflow: hidden;
-  fill: var(--cultured);
+  fill: var(--gainsboro);
+`;
+
+export const Content = styled.div`
+  position: relative;
 `;

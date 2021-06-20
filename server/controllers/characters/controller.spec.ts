@@ -3,7 +3,7 @@ import { formatResponse } from './controller';
 describe('formatResponse', () => {
   it('correctly formats the given response', () => {
     const mockedResponse = {
-      info: {} as RMApi.Character.IInfo,
+      info: {} as RMApi.Characters.IInfo,
       results: [
         {
           id: 48,
@@ -25,7 +25,7 @@ describe('formatResponse', () => {
           url: 'some-url',
           created: 'some-create-date',
         },
-      ] as RMApi.Character.IResult[],
+      ] as RMApi.Character.IResponse[],
     };
 
     expect(formatResponse(mockedResponse)).toEqual([

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledButton = styled.button`
   all: unset;
+  cursor: pointer;
   display: inline-block;
   background-color: var(--raisinBlack);
   font-size: var(--body-text);

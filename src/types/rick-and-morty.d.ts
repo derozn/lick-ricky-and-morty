@@ -1,13 +1,6 @@
 declare namespace RMApi {
   declare namespace Character {
-    interface IInfo {
-      count: number;
-      pages: number;
-      next: string | null;
-      prev: string | null;
-    }
-
-    interface IResult {
+    interface IResponse {
       id: number;
       name: string;
       status: string;
@@ -26,10 +19,43 @@ declare namespace RMApi {
       url: string;
       created: string;
     }
+  }
+
+  declare namespace Characters {
+    interface IInfo {
+      count: number;
+      pages: number;
+      next: string | null;
+      prev: string | null;
+    }
 
     interface IResponse {
       info: IInfo;
-      results: IResult[];
+      results: Character.IResponse[];
+    }
+  }
+
+  declare namespace Location {
+    interface IResponse {
+      id: number;
+      name: string;
+      type: string;
+      dimension: string;
+      residents: string[];
+      url: string;
+      created: string;
+    }
+  }
+
+  declare namespace Episode {
+    interface IResponse {
+      id: number;
+      name: string;
+      air_date: string;
+      episode: string;
+      characters: string[];
+      url: string;
+      created: string;
     }
   }
 }

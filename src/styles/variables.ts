@@ -9,11 +9,13 @@ export const variables = css`
     --pacificBlue: #02b0c8;
     --lightGreen: #80e873;
     --cultured: #f5f5f5;
+    --gainsboro: #e0e0e0;
     --blackCoral: #515867;
 
     --primary-font: 'Montserrat';
     --secondary-font: 'Schwifty';
 
     --body-text: 16px;
+    --link-text: 18px;
   }
 `;

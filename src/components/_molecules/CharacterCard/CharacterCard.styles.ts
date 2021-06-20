@@ -21,6 +21,7 @@ export const AttributeItem = styled.li`
 `;
 
 export const Content = styled.div`
+  position: relative;
   width: 100%;
   padding: 1rem;
   display: flex;

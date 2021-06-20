@@ -14,9 +14,10 @@ declare namespace LickApi {
   }
 
   interface ICharacter extends ICharacterCore {
-    origin: ILocation;
     location: ILocation;
     episodes: IEpisode[];
+    origin: string;
+    totalEpisodeCount: number;
   }
 
   interface ILocation {
@@ -38,5 +39,10 @@ declare namespace LickApi {
   interface ICharacterCoreResponse {
     status: string;
     data: ICharacterCore[];
+  }
+
+  interface ICharacterResponse {
+    status: string;
+    data: ICharacter;
   }
 }

@@ -4,7 +4,7 @@ import { config } from '@/config';
 
 const { RICK_AND_MORTY_CHARACTER_ENDPOINT } = config;
 
-export const formatResponse = (response: RMApi.Character.IResponse): LickApi.ICharacterCore[] => {
+export const formatResponse = (response: RMApi.Characters.IResponse): LickApi.ICharacterCore[] => {
   const { results } = response;
 
   return results.map((character) => ({
@@ -21,7 +21,7 @@ export const charactersController = async (req: NextApiRequest, res: NextApiResp
   const { name = 'rick', status = 'alive' } = req.query;
 
   try {
-    const response = await request<RMApi.Character.IResponse>(RICK_AND_MORTY_CHARACTER_ENDPOINT, {
+    const response = await request<RMApi.Characters.IResponse>(RICK_AND_MORTY_CHARACTER_ENDPOINT, {
       query: { name, status },
     });
 

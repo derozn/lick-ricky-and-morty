@@ -10,7 +10,7 @@ interface IHomeProps {
 export const Home: FC<IHomeProps> = ({ data }) => (
   <div>
     <HeroAndContent
-      offset={-160}
+      offset={-60}
       hero={<PageHero text="Rick and Morty" />}
       content={<CharacterGrid characters={data} />}
     />

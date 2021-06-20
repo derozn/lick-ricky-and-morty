@@ -7,11 +7,13 @@ interface ICharacterGridProps {
 }
 
 export const CharacterGrid: FC<ICharacterGridProps> = ({ characters }) => (
-  <Grid>
-    {characters.map((character) => (
-      <li key={character.id}>
-        <CharacterCard {...character} />
-      </li>
-    ))}
-  </Grid>
+  <section>
+    <Grid>
+      {characters.map((character) => (
+        <li key={character.id}>
+          <CharacterCard {...character} />
+        </li>
+      ))}
+    </Grid>
+  </section>
 );
