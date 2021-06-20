@@ -1,1 +1,0 @@
-export { characterController } from './controller';

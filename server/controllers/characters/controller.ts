@@ -17,7 +17,7 @@ export const formatResponse = (response: RMApi.Character.IResponse): LickApi.ICh
   }));
 };
 
-export const characterController = async (req: NextApiRequest, res: NextApiResponse) => {
+export const charactersController = async (req: NextApiRequest, res: NextApiResponse) => {
   const { name = 'rick', status = 'alive' } = req.query;
 
   try {

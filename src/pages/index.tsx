@@ -13,7 +13,7 @@ const HomePage: NextPage = ({ data }: InferGetServerSidePropsType<typeof getServ
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   const { data } = await requestWithAbsoluteUrl<LickApi.ICharacterCoreResponse>(
     req,
-    '/api/character',
+    '/api/characters',
   );
 
   return {
