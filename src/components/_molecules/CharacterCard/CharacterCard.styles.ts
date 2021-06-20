@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Article = styled.article`
   position: relative;
-  width: 100%;
-  max-width: 320px;
+  width: 320px;
   background: var(--cultured);
 `;
 
